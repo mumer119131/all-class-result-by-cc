@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  height: 100%;
+  min-height: 100vh;
+  background: linear-gradient(green, rgb(111, 231, 12));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+.container {
+  width: 70%;
+  height: auto;
+  min-height: 50%;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.container input {
+  width: 50%;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.container button {
+  width: 50%;
+  height: 50px;
+  background-color: rgb(109, 177, 8);
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 8px;
+  margin: 20px 0;
+  cursor: pointer;
+  color: white;
+  font-size: large;
+  letter-spacing: 2px;
+}
+.container h2 {
+  font-family: "metal-lord";
+  color: rgb(70, 69, 69);
+  font-size: xxx-large;
+}
+@font-face {
+  font-family: "squid-font";
+  src: url(squid.ttf);
+}
+@font-face {
+  font-family: "metal-lord";
+  src: url(Adventure.ttf);
+}
+#loading_anim {
+  height: 200px;
+  width: 200px;
+  visibility: collapse;
+}
+.result_table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0;
+  visibility: collapse;
+}
+.container p {
+  color: red;
+  visibility: collapse;
+}
+
+.result_table td,
+.result_table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.result_table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.result_table tr:hover {
+  background-color: #ddd;
+}
+
+.result_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
